@@ -1,1 +1,40 @@
+/* Основные стили для больших экранов */
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Стили для экранов до 768px (планшеты и телефоны) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none; /* Скрыть боковую панель на маленьких экранах */
+    }
+}
+
+/* Стили для экранов до 480px (мобильные телефоны) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .header, .footer {
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+}
 
